@@ -2,6 +2,7 @@
 py -3.10 -m venv target  
 .\fyp-env\Scripts\activate  
 Установить все пакеты
+Создать папку ./csv_files
 
 npm i
 
