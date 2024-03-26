@@ -1,2 +1,6 @@
 target
 node_modules
+csv_files
+merged_sorted_data.csv
+result.csv
+train_new.csv

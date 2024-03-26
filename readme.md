@@ -1,7 +1,11 @@
 Создать .env для .ipynb  
 py -3.10 -m venv target  
-.\fyp-env\Scripts\activate  
+.\target\Scripts\activate  
+python -m pip install --upgrade pip
+
 Установить все пакеты  
+pip install -r requirements.txt
+
 Создать папку ./csv_files
 
 npm i
