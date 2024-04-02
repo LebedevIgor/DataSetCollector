@@ -5,20 +5,20 @@ const AdmZip = require("adm-zip");
 const path = require("path");
 
 const coinData = {
-  0: "BNB",
+  // 0: "BNB",
   1: "BTC",
-  2: "BCH",
-  3: "ADA",
-  4: "DOGE",
-  5: "EOS",
-  6: "ETH",
-  7: "ETC",
-  8: "IOTA",
-  9: "LTC",
-  10: "MKR",
-  11: "XMR",
-  12: "XLM",
-  13: "TRX",
+  // 2: "BCH",
+  // 3: "ADA",
+  // 4: "DOGE",
+  // 5: "EOS",
+  // 6: "ETH",
+  // 7: "ETC",
+  // 8: "IOTA",
+  // 9: "LTC",
+  // 10: "MKR",
+  // 11: "XMR",
+  // 12: "XLM",
+  // 13: "TRX",
 };
 
 async function getCoinPrices(symbol, AssetID) {
@@ -26,7 +26,7 @@ async function getCoinPrices(symbol, AssetID) {
   const interval = "1m";
   // const previousDate = DateTime.now().minus({ days: 1 }).toFormat('yyyy-MM-dd');
   //С этим можно играться
-  const previousDate = DateTime.now().minus({ months: 12 }).toFormat("yyyy-MM");
+  const previousDate = DateTime.now().minus({ months: 50 }).toFormat("yyyy-MM");
   const url = `${baseUrl}/${symbol}USDT/${interval}/${symbol}USDT-${interval}-${previousDate}.zip`;
   console.log(url);
   const zipFilePath = `${symbol}-${interval}-${previousDate}.zip`;

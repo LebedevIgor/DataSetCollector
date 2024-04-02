@@ -5,13 +5,12 @@ async function mergeSortCSVFiles() {
   const mergedFileName = "merged_sorted_data.csv";
 
   try {
-    // fs.writeFileSync(
-    //   mergedFileName,
-    //   "timestamp,Asset_ID,Count,Open,High,Low,Close,Volume,VWAP,Target\n"
-    // );
+    fs.writeFileSync(
+      mergedFileName,
+      "timestamp,Asset_ID,Count,Open,High,Low,Close,Volume,VWAP,Target\n"
+    );
 
     const csvFiles = fs.readdirSync(directoryPath);
-
     for (const file of csvFiles) {
       const csvData = fs.readFileSync(`${directoryPath}/${file}`, "utf8");
 
